@@ -1,6 +1,6 @@
 module.exports = {
   context: __dirname + '/app',
-  entry: './app.js',
+  entry: './index.js',
   module: {
     loaders: [
       {

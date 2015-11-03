@@ -7,6 +7,7 @@ import * as actions from './reducers/actions.js';
 import store from './store.js';
 import App from './containers/App'
 
+store.dispatch(actions.addTodo("asdf"));
 
 
 render(
@@ -15,10 +16,10 @@ render(
       <App/>
     </Provider>
 
+    <DebugPanel top left bottom>
+      <DevTools store={store} monitor={LogMonitor}/>
+    </DebugPanel>
   </div>
   , document.body.appendChild(document.createElement('div')));
 
 
-//<DebugPanel top bottom bottom>
-//  <DevTools store={store} monitor={LogMonitor}/>
-//</DebugPanel>
